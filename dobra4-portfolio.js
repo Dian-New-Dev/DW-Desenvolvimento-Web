@@ -2,6 +2,17 @@ const dobra = document.querySelector('.dobra4-B');
 const images = dobra.querySelectorAll('img');
 images[0].style.display = 'block'
 
+const desktopButton = document.getElementById('desktopButton');
+const mobileButton = document.getElementById('mobileButton')
+
+desktopButton.addEventListener('click', function() {
+    mostrarImagensDesktop();
+})
+
+mobileButton.addEventListener('click', function() {
+    mostrarImagensMobile();
+})
+
 const setaEsquerda = document.querySelector('.seta-esquerda');
 const setaDireita = document.querySelector('.seta-direita');
 
@@ -36,5 +47,17 @@ function scrollLeft() {
         } else {
             
         }
+    }
+}
+
+function mostrarImagensMobile() {
+    for (let i = 0; i < images.length; i++) {
+        images[i].src = 'images/templates/template' + (i+1) + '-mobile.jpg';
+    }
+}
+
+function mostrarImagensDesktop() {
+    for (let i = 0; i < images.length; i++) {
+        images[i].src = 'images/templates/template' + (i+1) + '.png';
     }
 }
