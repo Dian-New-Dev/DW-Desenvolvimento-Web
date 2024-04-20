@@ -7,7 +7,7 @@ for (let i = 0; i < buttons.length; i++) {
 }
 
 function mouseEntrou(botao) {
-    botao.style.transform = 'scale(1.2)';
+    botao.style.transform = 'scale(1.05)';
 }
 
 for (let i = 0; i < buttons.length; i++) {

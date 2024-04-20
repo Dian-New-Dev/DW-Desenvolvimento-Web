@@ -24,6 +24,11 @@ a {
     padding: 20px;
 }
 
+.menu-desktop a:not(:last-child):hover {
+    transform: scale(1.05);
+    color: rgb(229, 229, 160);
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -71,6 +76,12 @@ header img {
     background-color: black;
     border: 5px solid #da3026;
 }
+
+.black-link:hover {
+    background-color: white;
+    color: black;
+}
+
 .menu-desktop {
     flex: 2;
     display: flex;
@@ -347,14 +358,22 @@ main section {
 
 .dobra3-wrapper div {
     display: flex;
-    border: 5px solid #da3026;
+    flex-direction: column;
     width: 200px;
     height: 200px;
+    border: 2px solid #da3026;
+    background-color: #da3026;
     border-radius: 100%;
     align-items: center;
     text-align: center;
 }
 
+h5 {
+    color: #272727;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0;
+}
 
 .dobra4-portfolio {
     display: flex;
@@ -415,6 +434,14 @@ main section {
     font-weight: 600;
     cursor: pointer;
 
+}
+
+.seta-esquerda:hover {
+    transform: scale(1.05)
+}
+
+.seta-direita:hover {
+    transform: scale(1.05)
 }
 
 @media (max-width:600px) {
@@ -682,7 +709,7 @@ footer p {
     margin-right: 10px;
     padding-left:20px ;
     padding-right:20px ;
-    border: 1px solid black;
+    border: 1px solid #272727;
     border-radius: 5px;
 }
 
@@ -693,7 +720,7 @@ footer p {
 }
 
 .third {
-    background-color: #000000;
+    background-color: #272727;
     border-radius: 5px;
 
 }
@@ -720,6 +747,7 @@ footer p {
     align-items: flex-end;
     padding-right: 40px;
     z-index: 152;
+    cursor: pointer;
 
 }
 
