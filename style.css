@@ -337,6 +337,7 @@ main section {
 .dobra3-wrapper-mobile {
     display: none;
     text-align: left;
+    padding: 0px 20px;
 }
 
 .dobra3-wrapper-mobile div {
