@@ -425,6 +425,9 @@ h5 {
 .dobra4-B {
     display: block;
     position: relative;
+    border: none;
+    text-align: center;
+    
 }
 
 .dobra4-B-mobile {

@@ -58,6 +58,6 @@ function mostrarImagensMobile() {
 
 function mostrarImagensDesktop() {
     for (let i = 0; i < images.length; i++) {
-        images[i].src = 'images/templates/template' + (i+1) + '.png';
+        images[i].src = 'images/templates/blender-template' + (i+1) + '.png';
     }
 }
