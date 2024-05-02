@@ -345,14 +345,216 @@ main section {
 }
 
 .dobra3-wrapper {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-around;
     padding-top: 20px;
     padding: 20px;
 }
 
-@media (max-width: 600px) {
+.passo1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.passo1-text {
+    text-align: left;
+    flex: 0.5;
+    padding: 0px 100px
+}
+
+.mostruario-de-secoes {
+    flex: 0.5;
+    padding: 0px 100px
+}
+
+.navegador {
+    border: 5px solid #818181;
+    border-radius: 20px;
+    background-color: rgba(112, 112, 112, 0.356);
+    
+}
+
+.navegador p {
+    margin: 0;
+    background-color: #d1d1d1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: left;
+    padding-left: 30px;
+    color: black;
+}
+
+.navegador-wrapper h6:nth-child(1) {
+    border-bottom: 1px solid rgb(4, 0, 255);
+    padding: 5px 0px;
+    color: white;
+    font-weight: 100;
+}
+
+.navegador-wrapper h6:nth-child(2) {
+    border-bottom: 1px solid rgb(255, 102, 0);
+    padding: 20px 0px;
+    color: white;
+    font-weight: 100;
+}
+
+.navegador-wrapper h6:nth-child(3) {
+    border-bottom: 1px solid rgb(0, 255, 76);
+    padding: 20px 0px;
+    color: white;
+    font-weight: 100;
+}
+
+.navegador-wrapper h6:nth-child(4) {
+    border-bottom: 1px solid rgb(255, 0, 242);
+    padding: 20px 0px;
+    color: white;
+    font-weight: 100;
+}
+
+.navegador-wrapper h6:nth-child(5) {
+    border-bottom: 1px solid rgb(217, 255, 0);
+    padding: 20px 0px;
+    color: white;
+    font-weight: 100;
+}
+
+.navegador-wrapper h6:nth-child(6) {
+    border-bottom: 1px solid rgb(255, 0, 98);
+    padding: 20px 0px;
+    color: white;
+    font-weight: 100;
+}
+
+.navegador-wrapper h6:nth-child(7) {
+    border-bottom: 1px solid rgb(140, 0, 255);
+    padding: 20px 0px;
+    color: white;
+    font-weight: 100;
+}
+
+.navegador-wrapper h6:nth-child(8) {
+    padding: 5px 0px;
+    color: white;
+    font-weight: 100;
+}
+
+.passo2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    position: relative;
+    padding: 0px 40px;
+}
+
+.passo2-text {
+    text-align: left;
+    flex: 0.4;
+}
+
+.planos-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 0.6;
+}
+
+.planos {
+    display: flex;
+    align-items: center;
+}
+
+.planos-paineis {
+    background-color: #da2f2688;
+    border: 2px solid #da3026;
+    border-radius: 20px;
+    padding: 0px 20px;
+    margin: 0px 10px;
+    width: 250px;
+    font-weight: 600;
+}
+
+.planos-paineis h3 {
+    background-color: black;
+    padding: 10px 10px;
+}
+
+.planos-paineis h4 {
+    font-weight: 900;
+    font-size: 28px;
+    border-top: 1px solid #da3026;
+    padding-top: 30px;
+}
+
+.planos-paineis p {
+    margin: 20px 0px;
+}
+
+.gratuitos p {
+    margin: 0;
+    padding: 10px;
+    
+}
+
+.passo3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.passo3-text {
+    padding: 0px 100px;
+    text-align: left;
+    flex: 0.5;
+}
+
+.hospedagem {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    flex: 0.5;
+    text-align: left;
+    padding: 0px 100px;
+}
+
+.hospedagem-paineis {
+    background-color: #da2f2688;
+    border: 2px solid #da3026;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.hospedagem-paineis p {
+    margin: 0;
+    padding: 20px;
+}
+
+.passo3-text b {
+    text-decoration: underline;
+    font-size: larger;
+}
+
+.passos4-e-5-wrapper {
+    display: flex;
+    
+}
+
+.passo4 {
+    flex: 0.5;
+    padding: 0px 100px;
+}
+
+.passo5 {
+    flex: 0.5;
+    padding: 0px 100px;
+}
+
+@media (max-width: 1300px) {
     .dobra3-wrapper {
         display: none;
     }
@@ -365,9 +567,8 @@ main section {
 }
 
 .dobra3-wrapper-mobile div {
-    height: 100px;
-    display: flex;
-    align-items: center;
+    height: 100%;
+    padding: 20px;
 }
 
 .red {
@@ -375,13 +576,13 @@ main section {
     border: 1px solid black;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1300px) {
     .dobra3-wrapper-mobile {
         display: block;
     }
 }
 
-.dobra3-wrapper div {
+/* .dobra3-wrapper div {
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -391,14 +592,25 @@ main section {
     border-radius: 100%;
     align-items: center;
     text-align: center;
-}
+} */
 
 h5 {
-    color: #272727;
+    color: #da3026;
     font-size: 50px;
     font-weight: 900;
     margin: 0;
 }
+
+.dobra3-como-funciona h6 {
+    font-size: 20px;
+    margin: 0;
+    color: #da3026;
+}
+
+.navegador h6 {
+    font-size: 14px;
+}
+
 
 .dobra4-portfolio {
     display: flex;
@@ -696,10 +908,29 @@ footer p {
     margin-bottom: 100px;
     padding: 50px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.dobra-CTA1 * {
+    z-index: 5;
+    position: relative;
+}
+
+.seta-up-img {
+    position: absolute;
+    opacity: 0.5;
+    bottom: -333%;
+    left: -1%;
+    z-index: 1;
+    transform: rotate(360deg);
+    width: 100%;
 }
 
 .dobra-CTA1 button {
     background-color: black;
+    z-index: 5;
 }
 
 .dobra-CTA2 {
