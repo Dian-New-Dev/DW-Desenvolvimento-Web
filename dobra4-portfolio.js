@@ -52,12 +52,12 @@ function scrollLeft() {
 
 function mostrarImagensMobile() {
     for (let i = 0; i < images.length; i++) {
-        images[i].src = 'images/templates/template' + (i+1) + '-mobile.jpg';
+        images[i].src = 'images/templates/template' + (i) + '-mobile.jpg';
     }
 }
 
 function mostrarImagensDesktop() {
     for (let i = 0; i < images.length; i++) {
-        images[i].src = 'images/templates/blender-template' + (i+1) + '.png';
+        images[i].src = 'images/templates/blender-template' + (i) + '.png';
     }
 }
