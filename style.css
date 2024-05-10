@@ -138,6 +138,7 @@ main {
 
 @media (min-width: 1600px) {
     main section {
+        margin-bottom: 100px;
         margin-left: 0px ;
         margin-right: 0px ;
         width: 1380px;
@@ -196,7 +197,6 @@ button {
 }
 
 main section {
-    margin-bottom: 100px;
     z-index: 5;
 }
 
