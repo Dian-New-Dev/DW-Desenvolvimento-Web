@@ -203,18 +203,11 @@ main section {
 
 .background-img {
     position: absolute;
-    background-image: url('images/global\ from\ srip.png');
-    background-repeat: no-repeat;
     z-index: 0;
     top: 100px;
     right: 0px;
     opacity: 0.2;
     width: 100%;
-    height: 100%;
-    background-attachment: fixed;
-    background-size: contain;
-    background-position: center;
-
 }
 
 .dobra1-titulo {
