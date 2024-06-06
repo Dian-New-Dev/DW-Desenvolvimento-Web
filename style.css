@@ -5,14 +5,17 @@
 html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+
     
 }
 
 body {
     color: white;
     background-color: #010001;
-    width: 100%;
+
     height: 100%;
+
 }
 
 a {
@@ -380,22 +383,42 @@ main section {
     align-items: center;
     justify-content: space-around;
     padding-top: 20px;
-    padding: 20px;
+    padding: 0px;
+}
+
+@media (min-width: 1200px) {
+    .dobra3-wrapper {
+
+        padding: 20px;
+    }
+
+}
+
+.dobra3-wrapper p {
+    line-height: 30px;
 }
 
 .passo1 {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 80px;
 }
 
 .passo1-text {
-    text-align: left;
+    text-align: center;
     flex: 0.5;
     padding: 0px 100px
 }
 
-.mostruario-de-secoes {
+@media (max-width: 800px) {
+    .passo1-text {
+        padding: 0px;
+    }
+
+}
+
+/* .mostruario-de-secoes {
     flex: 0.5;
     padding: 0px 100px
 }
@@ -470,30 +493,32 @@ main section {
     padding: 5px 0px;
     color: white;
     font-weight: 100;
-}
+} */
 
 .passo2 {
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 80px;
     position: relative;
-    padding: 0px 40px;
+
 }
 
 .passo2-text {
-    text-align: left;
-    flex: 0.4;
+    text-align: center;
 }
 
 .planos-wrapper {
     display: flex;
     flex-direction: column;
-    flex: 0.6;
+    width: 100%;
 }
 
 .planos {
-    display: flex;
-    align-items: center;
+	display: grid;
+    justify-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
 }
 
 .planos-paineis {
@@ -501,10 +526,20 @@ main section {
     border: 2px solid #da3026;
     border-radius: 20px;
     padding: 0px 20px;
-    margin: 0px 10px;
+    margin: 50px 10px;
     width: 250px;
     font-weight: 600;
+    height: 405px;
+    /* filter: drop-shadow(5px 5px 50px red); */
 }
+
+@media (max-width: 900px) {
+    .planos-paineis {
+        margin-top: 10px;
+    }
+}
+
+
 
 .planos-paineis h3 {
     background-color: black;
@@ -520,6 +555,8 @@ main section {
 
 .planos-paineis p {
     margin: 20px 0px;
+    font-weight: 100;
+    line-height: initial;
 }
 
 .gratuitos p {
@@ -534,9 +571,15 @@ main section {
     margin-bottom: 80px;
 }
 
+@media (max-width: 900px) {
+    .passo3 {
+        flex-direction: column;
+    }
+}
+
 .passo3-text {
     padding: 0px 100px;
-    text-align: left;
+    text-align: center;
     flex: 0.5;
 }
 
@@ -549,6 +592,12 @@ main section {
     flex: 0.5;
     text-align: left;
     padding: 0px 100px;
+}
+
+@media (max-width: 600px) {
+    .hospedagem {
+        padding: 0px 10px;
+    }
 }
 
 .hospedagem-paineis {
@@ -588,21 +637,28 @@ main section {
     
 }
 
+@media (max-width: 900px) {
+    .passos4-e-5-wrapper {
+        flex-direction: column;
+        
+    }
+}
+
 .passo4 {
     flex: 0.5;
-    padding: 0px 100px;
+    padding: 0px 50px;
 }
 
 .passo5 {
     flex: 0.5;
-    padding: 0px 100px;
+    padding: 0px 50px;
 }
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
     .dobra3-wrapper {
         display: none;
     }
-}
+} */
 
 .dobra3-wrapper-mobile {
     display: none;
@@ -620,11 +676,11 @@ main section {
     border: 1px solid black;
 }
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
     .dobra3-wrapper-mobile {
         display: block;
     }
-}
+} */
 
 /* .dobra3-wrapper div {
     display: flex;
@@ -743,6 +799,7 @@ h5 {
         padding: 20px;
         text-align: center;
         align-items: center;
+        margin-bottom: 50px;
     }
 }
 
@@ -888,6 +945,12 @@ footer p {
     padding: 5px;
 }
 
+@media (max-width: 500px) {
+    footer p {
+        font-size: 12px;
+    }
+}
+
 .redes-sociais {
     display: flex;
 }
@@ -938,7 +1001,7 @@ footer p {
     padding: 50px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1075px) {
     .dobra-CTA2 {
         display: block;
         justify-content: space-between;
