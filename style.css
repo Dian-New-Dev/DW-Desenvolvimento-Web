@@ -714,6 +714,7 @@ h5 {
 
 .dobra4-portfolio {
     display: flex;
+    flex-direction: column;
     scroll-margin-top: 100px;
 }
 
@@ -722,6 +723,15 @@ h5 {
         display: block;
     }
 
+}
+
+iframe {
+    border: 1px solid red;
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: white;
 }
 
 
