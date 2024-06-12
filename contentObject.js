@@ -11,6 +11,7 @@ const sitesAdv = [
 
 const sitesTer = [
     'https://dian-new-dev.github.io/LPT-3/',
+    'https://dian-new-dev.github.io/LPT-4/',
     'https://dian-new-dev.github.io/LPT-1/',
     'https://dian-new-dev.github.io/LPT-2/',
 ]
