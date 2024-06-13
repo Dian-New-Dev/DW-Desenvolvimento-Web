@@ -1,7 +1,7 @@
 const sitesAdv = [
     'https://dian-new-dev.github.io/LP-0/', 
     'https://dian-new-dev.github.io/LP-3/', 
-    'https://dian-new-dev.github.io/LP-8/', 
+    // 'https://dian-new-dev.github.io/LP-8/', 
     'https://dian-new-dev.github.io/LP-6/', 
     'https://dian-new-dev.github.io/LP-5/', 
     'https://dian-new-dev.github.io/LP-2/', 

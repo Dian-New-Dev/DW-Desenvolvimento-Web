@@ -195,6 +195,8 @@ button {
 
 }
 
+
+
 @media (min-width: 1280px) {
     button {
         font-size: 16px;
@@ -796,6 +798,10 @@ iframe {
 
     }
 
+
+.buttons-wrapper {
+    display: flex;
+}
 .dobra5-quem-sou-eu {
     display: flex;
     border: 1px solid #da3026;
